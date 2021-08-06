@@ -1,0 +1,243 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\augh\Documents\fpgaFM_matrix\fpgaSynth.qsys --block-symbol-file --output-directory=C:\Users\augh\Documents\fpgaFM_matrix\fpgaSynth --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading fpgaFM_matrix/fpgaSynth.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding i2c_0 [altera_avalon_i2c 20.1]
+Progress: Parameterizing module i2c_0
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 20.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding key [altera_avalon_pio 20.1]
+Progress: Parameterizing module key
+Progress: Adding keycode_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module keycode_0
+Progress: Adding keycode_1 [altera_avalon_pio 20.1]
+Progress: Parameterizing module keycode_1
+Progress: Adding keycode_2 [altera_avalon_pio 20.1]
+Progress: Parameterizing module keycode_2
+Progress: Adding keycode_3 [altera_avalon_pio 20.1]
+Progress: Parameterizing module keycode_3
+Progress: Adding led [altera_avalon_pio 20.1]
+Progress: Parameterizing module led
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding octave [altera_avalon_pio 20.1]
+Progress: Parameterizing module octave
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 20.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sdram [altera_avalon_new_sdram_controller 20.1]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_pll [altpll 20.1]
+Progress: Parameterizing module sdram_pll
+Progress: Adding spi_0 [altera_avalon_spi 20.1]
+Progress: Parameterizing module spi_0
+Progress: Adding switch [altera_avalon_pio 20.1]
+Progress: Parameterizing module switch
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 20.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding timer [altera_avalon_timer 20.1]
+Progress: Parameterizing module timer
+Progress: Adding usb_gpx [altera_avalon_pio 20.1]
+Progress: Parameterizing module usb_gpx
+Progress: Adding usb_irq [altera_avalon_pio 20.1]
+Progress: Parameterizing module usb_irq
+Progress: Adding usb_rst [altera_avalon_pio 20.1]
+Progress: Parameterizing module usb_rst
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fpgaSynth.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: fpgaSynth.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: fpgaSynth.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: fpgaSynth.switch: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: fpgaSynth.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: fpgaSynth.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: fpgaSynth.usb_gpx: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: fpgaSynth.usb_irq: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\augh\Documents\fpgaFM_matrix\fpgaSynth.qsys --synthesis=VERILOG --output-directory=C:\Users\augh\Documents\fpgaFM_matrix\fpgaSynth\synthesis --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading fpgaFM_matrix/fpgaSynth.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding i2c_0 [altera_avalon_i2c 20.1]
+Progress: Parameterizing module i2c_0
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 20.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding key [altera_avalon_pio 20.1]
+Progress: Parameterizing module key
+Progress: Adding keycode_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module keycode_0
+Progress: Adding keycode_1 [altera_avalon_pio 20.1]
+Progress: Parameterizing module keycode_1
+Progress: Adding keycode_2 [altera_avalon_pio 20.1]
+Progress: Parameterizing module keycode_2
+Progress: Adding keycode_3 [altera_avalon_pio 20.1]
+Progress: Parameterizing module keycode_3
+Progress: Adding led [altera_avalon_pio 20.1]
+Progress: Parameterizing module led
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding octave [altera_avalon_pio 20.1]
+Progress: Parameterizing module octave
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 20.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sdram [altera_avalon_new_sdram_controller 20.1]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_pll [altpll 20.1]
+Progress: Parameterizing module sdram_pll
+Progress: Adding spi_0 [altera_avalon_spi 20.1]
+Progress: Parameterizing module spi_0
+Progress: Adding switch [altera_avalon_pio 20.1]
+Progress: Parameterizing module switch
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 20.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding timer [altera_avalon_timer 20.1]
+Progress: Parameterizing module timer
+Progress: Adding usb_gpx [altera_avalon_pio 20.1]
+Progress: Parameterizing module usb_gpx
+Progress: Adding usb_irq [altera_avalon_pio 20.1]
+Progress: Parameterizing module usb_irq
+Progress: Adding usb_rst [altera_avalon_pio 20.1]
+Progress: Parameterizing module usb_rst
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fpgaSynth.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: fpgaSynth.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: fpgaSynth.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: fpgaSynth.switch: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: fpgaSynth.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: fpgaSynth.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: fpgaSynth.usb_gpx: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: fpgaSynth.usb_irq: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: fpgaSynth: Generating fpgaSynth "fpgaSynth" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src6 and cmd_mux_006.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src4 and cmd_mux_006.sink1
+Info: Inserting clock-crossing logic between rsp_demux_006.src0 and rsp_mux.sink6
+Info: Inserting clock-crossing logic between rsp_demux_006.src1 and rsp_mux_001.sink4
+Info: i2c_0: "fpgaSynth" instantiated altera_avalon_i2c "i2c_0"
+Info: jtag_uart: Starting RTL generation for module 'fpgaSynth_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=fpgaSynth_jtag_uart --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0003_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0003_jtag_uart_gen//fpgaSynth_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'fpgaSynth_jtag_uart'
+Info: jtag_uart: "fpgaSynth" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: key: Starting RTL generation for module 'fpgaSynth_key'
+Info: key:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=fpgaSynth_key --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0004_key_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0004_key_gen//fpgaSynth_key_component_configuration.pl  --do_build_sim=0  ]
+Info: key: Done RTL generation for module 'fpgaSynth_key'
+Info: key: "fpgaSynth" instantiated altera_avalon_pio "key"
+Info: keycode_0: Starting RTL generation for module 'fpgaSynth_keycode_0'
+Info: keycode_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=fpgaSynth_keycode_0 --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0005_keycode_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0005_keycode_0_gen//fpgaSynth_keycode_0_component_configuration.pl  --do_build_sim=0  ]
+Info: keycode_0: Done RTL generation for module 'fpgaSynth_keycode_0'
+Info: keycode_0: "fpgaSynth" instantiated altera_avalon_pio "keycode_0"
+Info: led: Starting RTL generation for module 'fpgaSynth_led'
+Info: led:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=fpgaSynth_led --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0006_led_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0006_led_gen//fpgaSynth_led_component_configuration.pl  --do_build_sim=0  ]
+Info: led: Done RTL generation for module 'fpgaSynth_led'
+Info: led: "fpgaSynth" instantiated altera_avalon_pio "led"
+Info: nios2_gen2_0: "fpgaSynth" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: octave: Starting RTL generation for module 'fpgaSynth_octave'
+Info: octave:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=fpgaSynth_octave --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0007_octave_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0007_octave_gen//fpgaSynth_octave_component_configuration.pl  --do_build_sim=0  ]
+Info: octave: Done RTL generation for module 'fpgaSynth_octave'
+Info: octave: "fpgaSynth" instantiated altera_avalon_pio "octave"
+Info: onchip_memory2_0: Starting RTL generation for module 'fpgaSynth_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=fpgaSynth_onchip_memory2_0 --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0008_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0008_onchip_memory2_0_gen//fpgaSynth_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'fpgaSynth_onchip_memory2_0'
+Info: onchip_memory2_0: "fpgaSynth" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: sdram: Starting RTL generation for module 'fpgaSynth_sdram'
+Info: sdram:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=fpgaSynth_sdram --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0009_sdram_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0009_sdram_gen//fpgaSynth_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'fpgaSynth_sdram'
+Info: sdram: "fpgaSynth" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: sdram_pll: "fpgaSynth" instantiated altpll "sdram_pll"
+Info: spi_0: Starting RTL generation for module 'fpgaSynth_spi_0'
+Info: spi_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=fpgaSynth_spi_0 --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0012_spi_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0012_spi_0_gen//fpgaSynth_spi_0_component_configuration.pl  --do_build_sim=0  ]
+Info: spi_0: Done RTL generation for module 'fpgaSynth_spi_0'
+Info: spi_0: "fpgaSynth" instantiated altera_avalon_spi "spi_0"
+Info: switch: Starting RTL generation for module 'fpgaSynth_switch'
+Info: switch:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=fpgaSynth_switch --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0013_switch_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0013_switch_gen//fpgaSynth_switch_component_configuration.pl  --do_build_sim=0  ]
+Info: switch: Done RTL generation for module 'fpgaSynth_switch'
+Info: switch: "fpgaSynth" instantiated altera_avalon_pio "switch"
+Info: sysid_qsys_0: "fpgaSynth" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: timer: Starting RTL generation for module 'fpgaSynth_timer'
+Info: timer:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=fpgaSynth_timer --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0015_timer_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0015_timer_gen//fpgaSynth_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: timer: Done RTL generation for module 'fpgaSynth_timer'
+Info: timer: "fpgaSynth" instantiated altera_avalon_timer "timer"
+Info: usb_gpx: Starting RTL generation for module 'fpgaSynth_usb_gpx'
+Info: usb_gpx:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=fpgaSynth_usb_gpx --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0016_usb_gpx_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0016_usb_gpx_gen//fpgaSynth_usb_gpx_component_configuration.pl  --do_build_sim=0  ]
+Info: usb_gpx: Done RTL generation for module 'fpgaSynth_usb_gpx'
+Info: usb_gpx: "fpgaSynth" instantiated altera_avalon_pio "usb_gpx"
+Info: usb_rst: Starting RTL generation for module 'fpgaSynth_usb_rst'
+Info: usb_rst:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=fpgaSynth_usb_rst --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0017_usb_rst_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0017_usb_rst_gen//fpgaSynth_usb_rst_component_configuration.pl  --do_build_sim=0  ]
+Info: usb_rst: Done RTL generation for module 'fpgaSynth_usb_rst'
+Info: usb_rst: "fpgaSynth" instantiated altera_avalon_pio "usb_rst"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_014: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_015: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_016: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_017: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_018: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_019: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "fpgaSynth" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "fpgaSynth" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "fpgaSynth" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'fpgaSynth_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=fpgaSynth_nios2_gen2_0_cpu --dir=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0020_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/augh/AppData/Local/Temp/alt8839_8357386029923032037.dir/0020_cpu_gen//fpgaSynth_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2021.07.30 19:23:35 (*) Starting Nios II generation
+Info: cpu: # 2021.07.30 19:23:35 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2021.07.30 19:23:35 (*)   Creating all objects for CPU
+Info: cpu: # 2021.07.30 19:23:36 (*)   Generating RTL from CPU objects
+Info: cpu: # 2021.07.30 19:23:36 (*)   Creating plain-text RTL
+Info: cpu: # 2021.07.30 19:23:37 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'fpgaSynth_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: sdram_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_s1_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: sdram_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "sdram_s1_rsp_width_adapter"
+Info: Reusing file C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_006: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_006"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_006" instantiated error_adapter "error_adapter_0"
+Info: fpgaSynth: Done "fpgaSynth" with 46 modules, 81 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

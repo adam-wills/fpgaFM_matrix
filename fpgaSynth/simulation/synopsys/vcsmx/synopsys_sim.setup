@@ -1,0 +1,37 @@
+
+WORK > DEFAULT
+DEFAULT:                                   ./libraries/work/                                     
+work:                                      ./libraries/work/                                     
+error_adapter_0:                           ./libraries/error_adapter_0/                          
+avalon_st_adapter_004:                     ./libraries/avalon_st_adapter_004/                    
+avalon_st_adapter:                         ./libraries/avalon_st_adapter/                        
+crosser:                                   ./libraries/crosser/                                  
+sdram_s1_rsp_width_adapter:                ./libraries/sdram_s1_rsp_width_adapter/               
+rsp_mux:                                   ./libraries/rsp_mux/                                  
+rsp_demux:                                 ./libraries/rsp_demux/                                
+cmd_mux:                                   ./libraries/cmd_mux/                                  
+cmd_demux:                                 ./libraries/cmd_demux/                                
+sdram_s1_burst_adapter:                    ./libraries/sdram_s1_burst_adapter/                   
+router_006:                                ./libraries/router_006/                               
+router_002:                                ./libraries/router_002/                               
+router:                                    ./libraries/router/                                   
+sysid_qsys_0_control_slave_agent_rsp_fifo: ./libraries/sysid_qsys_0_control_slave_agent_rsp_fifo/
+sysid_qsys_0_control_slave_agent:          ./libraries/sysid_qsys_0_control_slave_agent/         
+nios2_gen2_0_data_master_agent:            ./libraries/nios2_gen2_0_data_master_agent/           
+sysid_qsys_0_control_slave_translator:     ./libraries/sysid_qsys_0_control_slave_translator/    
+nios2_gen2_0_data_master_translator:       ./libraries/nios2_gen2_0_data_master_translator/      
+cpu:                                       ./libraries/cpu/                                      
+rst_controller:                            ./libraries/rst_controller/                           
+irq_mapper:                                ./libraries/irq_mapper/                               
+mm_interconnect_0:                         ./libraries/mm_interconnect_0/                        
+sysid_qsys_0:                              ./libraries/sysid_qsys_0/                             
+sdram_pll:                                 ./libraries/sdram_pll/                                
+sdram:                                     ./libraries/sdram/                                    
+onchip_memory2_0:                          ./libraries/onchip_memory2_0/                         
+nios2_gen2_0:                              ./libraries/nios2_gen2_0/                             
+altera_ver:                                ./libraries/altera_ver/                               
+lpm_ver:                                   ./libraries/lpm_ver/                                  
+sgate_ver:                                 ./libraries/sgate_ver/                                
+altera_mf_ver:                             ./libraries/altera_mf_ver/                            
+altera_lnsim_ver:                          ./libraries/altera_lnsim_ver/                         
+fiftyfivenm_ver:                           ./libraries/fiftyfivenm_ver/                          

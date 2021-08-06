@@ -1,0 +1,29 @@
+module formattedMultAdd
+#(
+      parameter DW = 32,
+		          VOICE_AW = 4
+)
+(
+      input  logic clk, enable
+      input  logic [DW-1:0]       routing_weights[0:1],
+      input  logic [DW-1:0]       routing_values [(2**VOICE_AW)-1:0],
+      input  logic [VOICE_AW-1:0] routing_indices[0:1],
+      output logic [DW-1:0]       routing_target
+);
+
+   reg   [DW-1:0]     voice_values[0:1];
+	reg   [(2*DW)-1:0] res;
+	
+   mult32x32Add2_ip multAdd
+   (
+        .clock0(clk),
+		  .ena0(enable),
+		  .dataa_0(routing_weights[0]),
+		  .dataa_1(voice_values[0]),
+		  .datab_0(routing_weights[1]),
+		  .datab_1(voices_values[1]),
+		  .result(res)
+   );
+	
+	assign voice_values = '{routing_values[routing_indices[0]], routing_values[routing_indices[1]};
+	assign routing_target = res[(2*DW)-1:DW];
