@@ -1,5 +1,8 @@
-module HexDriver (input  [3:0]  In0,
-                  output logic [6:0]  Out0);
+module HexDriver 
+(
+      input  logic [3:0]  In0,
+      output logic [6:0]  Out0
+);
 	
 	always_comb
 	begin
