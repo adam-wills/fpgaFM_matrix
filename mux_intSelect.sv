@@ -5,7 +5,7 @@ module mux_intSelect
 )
 (
       input  logic [DWIDTH-1:0] in_data[INPUTS],
-      input  logic [3:0]        select,
+      input  logic [7:0]        select,
       output logic [DWIDTH-1:0] out_data
 );
    logic [DWIDTH-1:0] mux_out;

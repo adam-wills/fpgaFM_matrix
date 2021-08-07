@@ -13,8 +13,8 @@ module formattedMultAdd
 	
    logic [DW-1:0]     voice_values0[0:3];
    logic [DW-1:0]     voice_values1[0:3];
-	logic [DW-1:0]     weights0    [0:3];
-	logic [DW-1:0]     weights1    [0:3];
+	logic [DW-1:0]     weights0     [0:3];
+	logic [DW-1:0]     weights1     [0:3];
 
    reg   [(2*DW)-1:0] res[0:3];
    

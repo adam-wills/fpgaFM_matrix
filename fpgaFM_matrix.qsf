@@ -484,7 +484,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE ADSREnv.sv
 set_global_assignment -name QIP_FILE fpgaSynth/synthesis/fpgaSynth.qip
 set_global_assignment -name SYSTEMVERILOG_FILE waveformROMbank.sv
 set_global_assignment -name SYSTEMVERILOG_FILE fpgaFM_matrix.sv
-set_global_assignment -name SYSTEMVERILOG_FILE paramRegfile.sv
 set_global_assignment -name SYSTEMVERILOG_FILE mux_intSelect.sv
 set_global_assignment -name SYSTEMVERILOG_FILE keycodeToMIDI.sv
 set_global_assignment -name SYSTEMVERILOG_FILE MIDItoPhaseIncrement.sv
