@@ -1,13 +1,14 @@
-module FMSM (
-				 input  logic	Clk, Reset, Continue,
-				 output logic  run, load_waves, load_enables, load_weights
-				 );
+module FMSM 
+(
+      input  logic Clk, Reset, Continue,
+      output logic run, load_waves, load_enables, load_weights
+);
 
 	enum logic [2:0] {Halted, 
-							Play, 
-							Load_waveforms, 
-							Load_fm_enables,
-							Load_fm_weights} State, Next_state;
+                          Play, 
+                          Load_waveforms, 
+                          Load_fm_enables,
+                          Load_fm_weights} State, Next_state;
 							
 		
 	always_ff @ (posedge Clk)
