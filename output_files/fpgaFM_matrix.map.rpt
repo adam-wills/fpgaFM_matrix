@@ -1,0 +1,504 @@
+Analysis & Synthesis report for fpgaFM_matrix
+Thu Aug 12 22:08:46 2021
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 Patches 0.08std SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                                     ;
++------------------------------------+-------------------------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Thu Aug 12 22:08:46 2021                           ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 Patches 0.08std SJ Lite Edition ;
+; Revision Name                      ; fpgaFM_matrix                                               ;
+; Top-level Entity Name              ; fpgaFM_matrix                                               ;
+; Family                             ; MAX 10                                                      ;
+; Total logic elements               ; N/A until Partition Merge                                   ;
+;     Total combinational functions  ; N/A until Partition Merge                                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                                   ;
+; Total registers                    ; N/A until Partition Merge                                   ;
+; Total pins                         ; N/A until Partition Merge                                   ;
+; Total virtual pins                 ; N/A until Partition Merge                                   ;
+; Total memory bits                  ; N/A until Partition Merge                                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                                   ;
+; Total PLLs                         ; N/A until Partition Merge                                   ;
+; UFM blocks                         ; N/A until Partition Merge                                   ;
+; ADC blocks                         ; N/A until Partition Merge                                   ;
++------------------------------------+-------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; fpgaFM_matrix      ; fpgaFM_matrix      ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 Patches 0.08std SJ Lite Edition
+    Info: Processing started: Thu Aug 12 22:08:37 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fpgaFM_matrix -c fpgaFM_matrix
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/trirom4096_5.v
+    Info (12023): Found entity 1: triRom4096_5 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/triRom4096_5.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/trirom4096_4.v
+    Info (12023): Found entity 1: triRom4096_4 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/triRom4096_4.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/trirom4096_3.v
+    Info (12023): Found entity 1: triRom4096_3 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/triRom4096_3.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/trirom4096_2.v
+    Info (12023): Found entity 1: triRom4096_2 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/triRom4096_2.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/trirom4096_1.v
+    Info (12023): Found entity 1: triRom4096_1 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/triRom4096_1.v Line: 40
+Warning (12019): Can't analyze file -- file IP_files/triRom4096_0.v is missing
+Warning (12019): Can't analyze file -- file IP_files/sqrRom4096_7.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sqrrom4096_6.v
+    Info (12023): Found entity 1: sqrRom4096_6 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sqrRom4096_6.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sqrrom4096_5.v
+    Info (12023): Found entity 1: sqrRom4096_5 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sqrRom4096_5.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sqrrom4096_4.v
+    Info (12023): Found entity 1: sqrRom4096_4 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sqrRom4096_4.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sqrrom4096_3.v
+    Info (12023): Found entity 1: sqrRom4096_3 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sqrRom4096_3.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sqrrom4096_2.v
+    Info (12023): Found entity 1: sqrRom4096_2 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sqrRom4096_2.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sqrrom4096_1.v
+    Info (12023): Found entity 1: sqrRom4096_1 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sqrRom4096_1.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sinerom4096.v
+    Info (12023): Found entity 1: sineRom4096 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sineRom4096.v Line: 40
+Warning (12019): Can't analyze file -- file IP_files/sawRom4096_7.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sawrom4096_6.v
+    Info (12023): Found entity 1: sawRom4096_6 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sawRom4096_6.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sawrom4096_5.v
+    Info (12023): Found entity 1: sawRom4096_5 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sawRom4096_5.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sawrom4096_4.v
+    Info (12023): Found entity 1: sawRom4096_4 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sawRom4096_4.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sawrom4096_3.v
+    Info (12023): Found entity 1: sawRom4096_3 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sawRom4096_3.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sawrom4096_2.v
+    Info (12023): Found entity 1: sawRom4096_2 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sawRom4096_2.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/sawrom4096_1.v
+    Info (12023): Found entity 1: sawRom4096_1 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/sawRom4096_1.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/parlleladd64x4.v
+    Info (12023): Found entity 1: parllelAdd64x4 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/parllelAdd64x4.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/paralleladder.v
+    Info (12023): Found entity 1: parallelAdder File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/parallelAdder.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/onchipfifo.v
+    Info (12023): Found entity 1: onChipFIFO File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/onChipFIFO.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/mult32x32add2_ip.v
+    Info (12023): Found entity 1: mult32x32Add2_ip File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/mult32x32Add2_ip.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/mult16x64add4_ip.v
+    Info (12023): Found entity 1: mult16x64Add4_ip File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/mult16x64Add4_ip.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/mult16x64add4.v
+    Info (12023): Found entity 1: mult16x64Add4 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/mult16x64Add4.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/mult16x64.v
+    Info (12023): Found entity 1: mult16x64 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/mult16x64.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/mult16x32add2.v
+    Info (12023): Found entity 1: mult16x32Add2 File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/mult16x32Add2.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/mult16x20add2_ip.v
+    Info (12023): Found entity 1: mult16x20Add2_ip File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/mult16x20Add2_ip.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/mult16add2_ip.v
+    Info (12023): Found entity 1: mult16Add2_ip File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/mult16Add2_ip.v Line: 40
+Warning (12019): Can't analyze file -- file IP_files/mult16Add_ip.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/mult16_ip.v
+    Info (12023): Found entity 1: mult16_ip File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/mult16_ip.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/mult8x24_ip.v
+    Info (12023): Found entity 1: mult8x24_ip File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/mult8x24_ip.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file ip_files/mult8x16_ip.v
+    Info (12023): Found entity 1: mult8x16_ip File: C:/Users/augh/Documents/fpgaFM_matrix/IP_files/mult8x16_ip.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file shiftreg_n.sv
+    Info (12023): Found entity 1: shiftreg_N File: C:/Users/augh/Documents/fpgaFM_matrix/shiftreg_N.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file phasor.sv
+    Info (12023): Found entity 1: phasor File: C:/Users/augh/Documents/fpgaFM_matrix/phasor.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file i2s_core.sv
+    Info (12023): Found entity 1: i2s_core File: C:/Users/augh/Documents/fpgaFM_matrix/i2s_core.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file hexdriver.sv
+    Info (12023): Found entity 1: HexDriver File: C:/Users/augh/Documents/fpgaFM_matrix/HexDriver.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fmsm.sv
+    Info (12023): Found entity 1: FMSM File: C:/Users/augh/Documents/fpgaFM_matrix/FMSM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cntr_modulus.sv
+    Info (12023): Found entity 1: cntr_modulus File: C:/Users/augh/Documents/fpgaFM_matrix/cntr_modulus.sv Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file clockdivider_aw.sv
+    Info (12023): Found entity 1: clockDivider_AW File: C:/Users/augh/Documents/fpgaFM_matrix/clockDivider_AW.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bilinearinterpolator.sv
+    Info (12023): Found entity 1: bilinearInterpolator File: C:/Users/augh/Documents/fpgaFM_matrix/bilinearInterpolator.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adsrenv.sv
+    Info (12023): Found entity 1: ADSRenv File: C:/Users/augh/Documents/fpgaFM_matrix/ADSREnv.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/fpgasynth.v
+    Info (12023): Found entity 1: fpgaSynth File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/fpgaSynth.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_reset_controller.v
+    Info (12023): Found entity 1: altera_reset_controller File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_reset_controller.v Line: 42
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_reset_synchronizer.v
+    Info (12023): Found entity 1: altera_reset_synchronizer File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_reset_synchronizer.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_irq_mapper.sv
+    Info (12023): Found entity 1: fpgaSynth_irq_mapper File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_irq_mapper.sv Line: 31
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0.v
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_avalon_st_adapter_006.v
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_avalon_st_adapter_006 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_avalon_st_adapter_006.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv Line: 66
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_avalon_st_adapter.v
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_avalon_st_adapter File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_avalon_st_adapter.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_avalon_st_adapter_error_adapter_0 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv Line: 66
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+    Info (12023): Found entity 1: altera_avalon_st_handshake_clock_crosser File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_st_clock_crosser.v
+    Info (12023): Found entity 1: altera_avalon_st_clock_crosser File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_st_clock_crosser.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_st_pipeline_base.v
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_base File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_st_pipeline_base.v Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_std_synchronizer_nocut.v
+    Info (12023): Found entity 1: altera_std_synchronizer_nocut File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_std_synchronizer_nocut.v Line: 44
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_width_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_width_adapter File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_width_adapter.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_address_alignment.sv
+    Info (12023): Found entity 1: altera_merlin_address_alignment File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_address_alignment.sv Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+    Info (12023): Found entity 1: altera_merlin_burst_uncompressor File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_burst_uncompressor.sv Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_rsp_mux_001.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_rsp_mux_001 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_rsp_mux_001.sv Line: 51
+Info (12021): Found 2 design units, including 2 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_arbitrator.sv
+    Info (12023): Found entity 1: altera_merlin_arbitrator File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_arbitrator.sv Line: 103
+    Info (12023): Found entity 2: altera_merlin_arb_adder File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_arbitrator.sv Line: 228
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_rsp_mux.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_rsp_mux File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_rsp_mux.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_rsp_demux_001.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_rsp_demux_001 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_rsp_demux_001.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_rsp_demux.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_rsp_demux File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_rsp_demux.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_cmd_mux_001.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_cmd_mux_001 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_cmd_mux_001.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_cmd_mux.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_cmd_mux File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_cmd_mux.sv Line: 51
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_cmd_demux_001.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_cmd_demux_001 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_cmd_demux_001.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_cmd_demux.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_cmd_demux File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_cmd_demux.sv Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_burst_adapter.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_burst_adapter.sv Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_uncompressed_only File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv Line: 39
+Info (12021): Found 5 design units, including 5 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_burstwrap_increment File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 40
+    Info (12023): Found entity 2: altera_merlin_burst_adapter_adder File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 55
+    Info (12023): Found entity 3: altera_merlin_burst_adapter_subtractor File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 77
+    Info (12023): Found entity 4: altera_merlin_burst_adapter_min File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 98
+    Info (12023): Found entity 5: altera_merlin_burst_adapter_13_1 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 264
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_burst_adapter_new.sv
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_new File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_burst_adapter_new.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_incr_burst_converter.sv
+    Info (12023): Found entity 1: altera_incr_burst_converter File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_incr_burst_converter.sv Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_wrap_burst_converter.sv
+    Info (12023): Found entity 1: altera_wrap_burst_converter File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_wrap_burst_converter.sv Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_default_burst_converter.sv
+    Info (12023): Found entity 1: altera_default_burst_converter File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_default_burst_converter.sv Line: 30
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_stage File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_st_pipeline_stage.sv Line: 22
+Info (12021): Found 2 design units, including 2 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_router_008.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_router_008_default_decode File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_router_008.sv Line: 45
+    Info (12023): Found entity 2: fpgaSynth_mm_interconnect_0_router_008 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_router_008.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_router_003.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_router_003_default_decode File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_router_003.sv Line: 45
+    Info (12023): Found entity 2: fpgaSynth_mm_interconnect_0_router_003 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_router_003.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_router_002.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_router_002_default_decode File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_router_002.sv Line: 45
+    Info (12023): Found entity 2: fpgaSynth_mm_interconnect_0_router_002 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_router_002.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_router_001.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_router_001_default_decode File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_router_001.sv Line: 45
+    Info (12023): Found entity 2: fpgaSynth_mm_interconnect_0_router_001 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_router_001.sv Line: 84
+Info (12021): Found 2 design units, including 2 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_mm_interconnect_0_router.sv
+    Info (12023): Found entity 1: fpgaSynth_mm_interconnect_0_router_default_decode File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_router.sv Line: 45
+    Info (12023): Found entity 2: fpgaSynth_mm_interconnect_0_router File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_mm_interconnect_0_router.sv Line: 84
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_sc_fifo.v
+    Info (12023): Found entity 1: altera_avalon_sc_fifo File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_sc_fifo.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_slave_agent.sv
+    Info (12023): Found entity 1: altera_merlin_slave_agent File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_slave_agent.sv Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_master_agent.sv
+    Info (12023): Found entity 1: altera_merlin_master_agent File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_master_agent.sv Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_slave_translator.sv
+    Info (12023): Found entity 1: altera_merlin_slave_translator File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_slave_translator.sv Line: 35
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_merlin_master_translator.sv
+    Info (12023): Found entity 1: altera_merlin_master_translator File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_merlin_master_translator.sv Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_usb_rst.v
+    Info (12023): Found entity 1: fpgaSynth_usb_rst File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_usb_rst.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_usb_gpx.v
+    Info (12023): Found entity 1: fpgaSynth_usb_gpx File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_usb_gpx.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_timer.v
+    Info (12023): Found entity 1: fpgaSynth_timer File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_timer.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_sysid_qsys_0.v
+    Info (12023): Found entity 1: fpgaSynth_sysid_qsys_0 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_sysid_qsys_0.v Line: 34
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_switch.v
+    Info (12023): Found entity 1: fpgaSynth_switch File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_switch.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_spi_0.v
+    Info (12023): Found entity 1: fpgaSynth_spi_0 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_spi_0.v Line: 41
+Info (12021): Found 4 design units, including 4 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_sdram_pll.v
+    Info (12023): Found entity 1: fpgaSynth_sdram_pll_dffpipe_l2c File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_sdram_pll.v Line: 38
+    Info (12023): Found entity 2: fpgaSynth_sdram_pll_stdsync_sv6 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_sdram_pll.v Line: 99
+    Info (12023): Found entity 3: fpgaSynth_sdram_pll_altpll_vg92 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_sdram_pll.v Line: 131
+    Info (12023): Found entity 4: fpgaSynth_sdram_pll File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_sdram_pll.v Line: 218
+Info (12021): Found 2 design units, including 2 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_sdram.v
+    Info (12023): Found entity 1: fpgaSynth_sdram_input_efifo_module File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_sdram.v Line: 21
+    Info (12023): Found entity 2: fpgaSynth_sdram File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_sdram.v Line: 159
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_onchip_memory2_0.v
+    Info (12023): Found entity 1: fpgaSynth_onchip_memory2_0 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_onchip_memory2_0.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_octave.v
+    Info (12023): Found entity 1: fpgaSynth_octave File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_octave.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_nios2_gen2_0.v
+    Info (12023): Found entity 1: fpgaSynth_nios2_gen2_0 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0.v Line: 9
+Info (12021): Found 21 design units, including 21 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_nios2_gen2_0_cpu.v
+    Info (12023): Found entity 1: fpgaSynth_nios2_gen2_0_cpu_register_bank_a_module File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 21
+    Info (12023): Found entity 2: fpgaSynth_nios2_gen2_0_cpu_register_bank_b_module File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 87
+    Info (12023): Found entity 3: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_debug File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 153
+    Info (12023): Found entity 4: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_break File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 295
+    Info (12023): Found entity 5: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_xbrk File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 588
+    Info (12023): Found entity 6: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_dbrk File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 795
+    Info (12023): Found entity 7: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_itrace File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 982
+    Info (12023): Found entity 8: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_td_mode File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 1115
+    Info (12023): Found entity 9: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_dtrace File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 1183
+    Info (12023): Found entity 10: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 1265
+    Info (12023): Found entity 11: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 1337
+    Info (12023): Found entity 12: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 1380
+    Info (12023): Found entity 13: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_fifo File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 1427
+    Info (12023): Found entity 14: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_pib File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 1913
+    Info (12023): Found entity 15: fpgaSynth_nios2_gen2_0_cpu_nios2_oci_im File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 1936
+    Info (12023): Found entity 16: fpgaSynth_nios2_gen2_0_cpu_nios2_performance_monitors File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 2006
+    Info (12023): Found entity 17: fpgaSynth_nios2_gen2_0_cpu_nios2_avalon_reg File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 2023
+    Info (12023): Found entity 18: fpgaSynth_nios2_gen2_0_cpu_ociram_sp_ram_module File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 2116
+    Info (12023): Found entity 19: fpgaSynth_nios2_gen2_0_cpu_nios2_ocimem File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 2181
+    Info (12023): Found entity 20: fpgaSynth_nios2_gen2_0_cpu_nios2_oci File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 2362
+    Info (12023): Found entity 21: fpgaSynth_nios2_gen2_0_cpu File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu.v Line: 2834
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_nios2_gen2_0_cpu_debug_slave_sysclk.v
+    Info (12023): Found entity 1: fpgaSynth_nios2_gen2_0_cpu_debug_slave_sysclk File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu_debug_slave_sysclk.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_nios2_gen2_0_cpu_debug_slave_tck.v
+    Info (12023): Found entity 1: fpgaSynth_nios2_gen2_0_cpu_debug_slave_tck File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu_debug_slave_tck.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_nios2_gen2_0_cpu_debug_slave_wrapper.v
+    Info (12023): Found entity 1: fpgaSynth_nios2_gen2_0_cpu_debug_slave_wrapper File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu_debug_slave_wrapper.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_nios2_gen2_0_cpu_test_bench.v
+    Info (12023): Found entity 1: fpgaSynth_nios2_gen2_0_cpu_test_bench File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_nios2_gen2_0_cpu_test_bench.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_led.v
+    Info (12023): Found entity 1: fpgaSynth_led File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_led.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_keycode_0.v
+    Info (12023): Found entity 1: fpgaSynth_keycode_0 File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_keycode_0.v Line: 21
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_key.v
+    Info (12023): Found entity 1: fpgaSynth_key File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_key.v Line: 21
+Info (12021): Found 5 design units, including 5 entities, in source file fpgasynth/synthesis/submodules/fpgasynth_jtag_uart.v
+    Info (12023): Found entity 1: fpgaSynth_jtag_uart_sim_scfifo_w File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_jtag_uart.v Line: 21
+    Info (12023): Found entity 2: fpgaSynth_jtag_uart_scfifo_w File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_jtag_uart.v Line: 78
+    Info (12023): Found entity 3: fpgaSynth_jtag_uart_sim_scfifo_r File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_jtag_uart.v Line: 164
+    Info (12023): Found entity 4: fpgaSynth_jtag_uart_scfifo_r File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_jtag_uart.v Line: 243
+    Info (12023): Found entity 5: fpgaSynth_jtag_uart File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_jtag_uart.v Line: 331
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_i2c.v
+    Info (12023): Found entity 1: altera_avalon_i2c File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_i2c.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_i2c_csr.v
+    Info (12023): Found entity 1: altera_avalon_i2c_csr File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_i2c_csr.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_i2c_clk_cnt.v
+    Info (12023): Found entity 1: altera_avalon_i2c_clk_cnt File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_i2c_clk_cnt.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_i2c_condt_det.v
+    Info (12023): Found entity 1: altera_avalon_i2c_condt_det File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_i2c_condt_det.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_i2c_condt_gen.v
+    Info (12023): Found entity 1: altera_avalon_i2c_condt_gen File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_i2c_condt_gen.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_i2c_fifo.v
+    Info (12023): Found entity 1: altera_avalon_i2c_fifo File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_i2c_fifo.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_i2c_mstfsm.v
+    Info (12023): Found entity 1: altera_avalon_i2c_mstfsm File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_i2c_mstfsm.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_i2c_rxshifter.v
+    Info (12023): Found entity 1: altera_avalon_i2c_rxshifter File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_i2c_rxshifter.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_i2c_txshifter.v
+    Info (12023): Found entity 1: altera_avalon_i2c_txshifter File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_i2c_txshifter.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_i2c_spksupp.v
+    Info (12023): Found entity 1: altera_avalon_i2c_spksupp File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_i2c_spksupp.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file fpgasynth/synthesis/submodules/altera_avalon_i2c_txout.v
+    Info (12023): Found entity 1: altera_avalon_i2c_txout File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/altera_avalon_i2c_txout.v Line: 18
+Info (12021): Found 1 design units, including 1 entities, in source file waveformrombank.sv
+    Info (12023): Found entity 1: waveformROMbank File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 2
+Warning (10275): Verilog HDL Module Instantiation warning at fpgaFM_matrix.sv(429): ignored dangling comma in List of Port Connections File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaFM_matrix.sv Line: 429
+Info (12021): Found 1 design units, including 1 entities, in source file fpgafm_matrix.sv
+    Info (12023): Found entity 1: fpgaFM_matrix File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaFM_matrix.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_intselect.sv
+    Info (12023): Found entity 1: mux_intSelect File: C:/Users/augh/Documents/fpgaFM_matrix/mux_intSelect.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file keycodetomidi.sv
+    Info (12023): Found entity 1: keycodeToMIDI File: C:/Users/augh/Documents/fpgaFM_matrix/keycodeToMIDI.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file miditophaseincrement.sv
+    Info (12023): Found entity 1: MIDItoPhaseIncrement File: C:/Users/augh/Documents/fpgaFM_matrix/MIDItoPhaseIncrement.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file miditotableinterp.sv
+    Info (12023): Found entity 1: MIDItoTableInterp File: C:/Users/augh/Documents/fpgaFM_matrix/MIDItoTableInterp.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file miditotableindex.sv
+    Info (12023): Found entity 1: MIDItoTableIndex File: C:/Users/augh/Documents/fpgaFM_matrix/MIDItoTableIndex.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file matrixregfile.sv
+    Info (12023): Found entity 1: matrixRegfile File: C:/Users/augh/Documents/fpgaFM_matrix/matrixRegfile.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file formattedmultadd.sv
+    Info (12023): Found entity 1: formattedMultAdd File: C:/Users/augh/Documents/fpgaFM_matrix/formattedMultAdd.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at i2s_core.sv(38): created implicit net for "sampleRequest" File: C:/Users/augh/Documents/fpgaFM_matrix/i2s_core.sv Line: 38
+Warning (10236): Verilog HDL Implicit Net warning at fpgaFM_matrix.sv(137): created implicit net for "octave" File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaFM_matrix.sv Line: 137
+Warning (10236): Verilog HDL Implicit Net warning at fpgaFM_matrix.sv(238): created implicit net for "voiceCycleEnable" File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaFM_matrix.sv Line: 238
+Warning (10236): Verilog HDL Implicit Net warning at fpgaFM_matrix.sv(329): created implicit net for "streamOutR" File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaFM_matrix.sv Line: 329
+Warning (10236): Verilog HDL Implicit Net warning at fpgaFM_matrix.sv(405): created implicit net for "SPI0_SS_N" File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaFM_matrix.sv Line: 405
+Warning (10236): Verilog HDL Implicit Net warning at formattedMultAdd.sv(29): created implicit net for "voices_values1" File: C:/Users/augh/Documents/fpgaFM_matrix/formattedMultAdd.sv Line: 29
+Warning (10037): Verilog HDL or VHDL warning at fpgaSynth_sdram.v(318): conditional expression evaluates to a constant File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_sdram.v Line: 318
+Warning (10037): Verilog HDL or VHDL warning at fpgaSynth_sdram.v(328): conditional expression evaluates to a constant File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_sdram.v Line: 328
+Warning (10037): Verilog HDL or VHDL warning at fpgaSynth_sdram.v(338): conditional expression evaluates to a constant File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_sdram.v Line: 338
+Warning (10037): Verilog HDL or VHDL warning at fpgaSynth_sdram.v(682): conditional expression evaluates to a constant File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_sdram.v Line: 682
+Warning (10037): Verilog HDL or VHDL warning at fpgaSynth_spi_0.v(402): conditional expression evaluates to a constant File: C:/Users/augh/Documents/fpgaFM_matrix/fpgaSynth/synthesis/submodules/fpgaSynth_spi_0.v Line: 402
+Error (10052): Verilog HDL error at waveformROMbank.sv(158): can't find port "dataIn" File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 158
+Error (10703): SystemVerilog error at waveformROMbank.sv(158): can't resolve aggregate expression in connection to port 1 on instance "sawMuxInterp" because the instance has no module binding File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 158
+Error (10052): Verilog HDL error at waveformROMbank.sv(159): can't find port "dataOut" File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 159
+Error (10703): SystemVerilog error at waveformROMbank.sv(159): can't resolve aggregate expression in connection to port 2 on instance "sawMuxInterp" because the instance has no module binding File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 159
+Error (10052): Verilog HDL error at waveformROMbank.sv(165): can't find port "dataIn" File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 165
+Error (10703): SystemVerilog error at waveformROMbank.sv(165): can't resolve aggregate expression in connection to port 1 on instance "sawMuxAnti" because the instance has no module binding File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 165
+Error (10052): Verilog HDL error at waveformROMbank.sv(166): can't find port "dataOut" File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 166
+Error (10703): SystemVerilog error at waveformROMbank.sv(166): can't resolve aggregate expression in connection to port 2 on instance "sawMuxAnti" because the instance has no module binding File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 166
+Error (10052): Verilog HDL error at waveformROMbank.sv(219): can't find port "dataIn" File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 219
+Error (10703): SystemVerilog error at waveformROMbank.sv(219): can't resolve aggregate expression in connection to port 1 on instance "sqrMuxInterp" because the instance has no module binding File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 219
+Error (10052): Verilog HDL error at waveformROMbank.sv(220): can't find port "dataOut" File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 220
+Error (10703): SystemVerilog error at waveformROMbank.sv(220): can't resolve aggregate expression in connection to port 2 on instance "sqrMuxInterp" because the instance has no module binding File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 220
+Error (10284): Verilog HDL Module Instantiation error at waveformROMbank.sv(225): port "oneHotoctave" is not declared by module "mux_intSelect" File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 225
+Error (10052): Verilog HDL error at waveformROMbank.sv(226): can't find port "dataIn" File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 226
+Error (10703): SystemVerilog error at waveformROMbank.sv(226): can't resolve aggregate expression in connection to port 1 on instance "sqrMuxAnti" because the instance has no module binding File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 226
+Error (10052): Verilog HDL error at waveformROMbank.sv(227): can't find port "dataOut" File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 227
+Error (10703): SystemVerilog error at waveformROMbank.sv(227): can't resolve aggregate expression in connection to port 2 on instance "sqrMuxAnti" because the instance has no module binding File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 227
+Error (10052): Verilog HDL error at waveformROMbank.sv(281): can't find port "dataIn" File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 281
+Error (10703): SystemVerilog error at waveformROMbank.sv(281): can't resolve aggregate expression in connection to port 1 on instance "triMuxInterp" because the instance has no module binding File: C:/Users/augh/Documents/fpgaFM_matrix/waveformROMbank.sv Line: 281
+Info (144001): Generated suppressed messages file C:/Users/augh/Documents/fpgaFM_matrix/output_files/fpgaFM_matrix.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 19 errors, 17 warnings
+    Error: Peak virtual memory: 4731 megabytes
+    Error: Processing ended: Thu Aug 12 22:08:48 2021
+    Error: Elapsed time: 00:00:11
+    Error: Total CPU time (on all processors): 00:00:22
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/augh/Documents/fpgaFM_matrix/output_files/fpgaFM_matrix.map.smsg.
+
+

@@ -21,7 +21,6 @@ module i2s_core
 	// dual-clock fifo declarations
 	logic [DW-1:0] fifoDout = {DW{1'b0}};
 	logic [DW-1:0] fifoDin = {DW{1'b0}};
-	logic          sampReq = 1'b0;
 	logic          sampFull = 1'b0;
 	logic          i2sReq = 1'b1;
 	logic          i2sEmpty = 1'b1;
@@ -34,15 +33,17 @@ module i2s_core
 	// this is somewhat halfassed
 	assign sampHalfFull = ~sampUsedw[7];
 	assign i2sHalfEmpty = ~i2sUsedw[7];
-	assign sampGenEn = (sampHalfFull | sampEmpty | i2sEmpty | i2sHalfEmpty) & (~i2sFull) & (~sampFull));
+	assign sampGenEn = ((sampHalfFull | sampEmpty | i2sEmpty | i2sHalfEmpty) & (~i2sFull) & (~sampFull));
 	assign fifoDin = i2sDin;
+	assign sampleRequest = sampReq;
 	
 	// sampReq clearly == readEn...
 	// toggle sampleRequest appropriately to coordinate sample generation with FIFO buffer fullness
 	always_ff @ (posedge FCLK) begin
-		if (Reset) 
+		if (Reset) begin
 			sampReq <= 1'b0;
 			readEn <= 1'b0;
+		end
 		else begin
 			if (sampGenEn) begin
 				if (sampReq == 1'b1) begin

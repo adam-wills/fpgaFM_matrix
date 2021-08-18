@@ -9,7 +9,7 @@ module MIDItoTableInterp
 );
 
    reg [31:0] data_reg[0:NUMREADS-1];
-   reg [31:0] indexToTableInterps[0:127]
+   reg [31:0] indexToTableInterps[0:127];
 
 	initial begin
 		readmemh("./inferredMem/tableInterps.txt", indexToTableInterps);
@@ -17,7 +17,7 @@ module MIDItoTableInterp
 	
    genvar i;
 	generate
-		for (i = 0; i < NUMREADS; i = i+1) begin
+		for (i = 0; i < NUMREADS; i = i+1) begin : midi_to_table_interp
 			always_ff @ (posedge clk)
 					data_reg[i] <= indexToTableInterps[midi_notenums[i]];
 			

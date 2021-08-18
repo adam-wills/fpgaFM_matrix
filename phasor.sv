@@ -26,7 +26,7 @@ module phasor
 			interp <= {IW{1'b0}};
 		end
 		else begin
-			if (Enable) begin
+			if (En) begin
 			/*
 				phase <= phase + phase_increment + fm_input;
 				wavetable_addr <= phase[DW-1:IW];

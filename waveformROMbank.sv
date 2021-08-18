@@ -75,7 +75,7 @@ module waveformROMbank
 	
 	genvar i;
 	generate
-	   for (i = TABLES; i < 8; i = i+1) begin
+	   for (i = TABLES; i < 8; i = i+1) begin : unused_table_init
 		   assign sawSamps[0][i] = {DWIDTH{1'b0}};
 	      assign sawSamps[1][i] = {DWIDTH{1'b0}};
 	      assign sqrSamps[0][i] = {DWIDTH{1'b0}};
@@ -83,6 +83,7 @@ module waveformROMbank
 	      assign triSamps[0][i] = {DWIDTH{1'b0}};
 	      assign triSamps[1][i] = {DWIDTH{1'b0}};
 		end
+   endgenerate
 	assign octave_interp = octave + 3'b001;
 	
 	sineRom4096	sineRom4096_inst 

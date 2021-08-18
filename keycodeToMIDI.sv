@@ -23,7 +23,7 @@ module keycodeToMIDI
 	
    genvar i;
 	generate
-		for (i = 0; i < NUMREADS; i = i+1) begin
+		for (i = 0; i < NUMREADS; i = i+1) begin : keycode_to_midi
 			always @ (posedge clk) begin
 				midiNNBase[i] <= keycodeToMidiNNBase[keycode[i]];
 				if (rden[i]) begin

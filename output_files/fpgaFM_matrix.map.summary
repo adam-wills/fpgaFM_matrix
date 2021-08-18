@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Failed - Thu Aug 12 22:08:46 2021
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 Patches 0.08std SJ Lite Edition
+Revision Name : fpgaFM_matrix
+Top-level Entity Name : fpgaFM_matrix
+Family : MAX 10
+Total logic elements : N/A until Partition Merge
+    Total combinational functions : N/A until Partition Merge
+    Dedicated logic registers : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total memory bits : N/A until Partition Merge
+Embedded Multiplier 9-bit elements : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
+UFM blocks : N/A until Partition Merge
+ADC blocks : N/A until Partition Merge

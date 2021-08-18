@@ -16,8 +16,8 @@ module matrixRegfile
 	int j;
 	
    generate
-      for (i = 0; i < NW; i = i+1) begin
-         for (j = 0; j < RW; j = j+1) begin
+      for (i = 0; i < NW; i = i+1) begin : matrix_reg_outer
+         for (j = 0; j < RW; j = j+1) begin : matrix_reg_inner
                always @ (posedge clk) begin
                   if (wren[i][j]) begin
                      regfile[i][j] = wr_data[i][j];

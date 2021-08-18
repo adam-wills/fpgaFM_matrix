@@ -1,10 +1,10 @@
 module formattedMultAdd
 #(
-      parameter DW = 32,
+      parameter DW = 16,
                 VOICE_AW = 4
 )
 (
-      input  logic clk, enable
+      input  logic clk, enable,
       input  logic [DW-1:0]       routing_weights[0:1][0:3],
       input  logic [DW-1:0]       routing_values [(2**VOICE_AW)-1:0],
       input  logic [VOICE_AW-1:0] routing_indices[0:1][0:3],
@@ -32,11 +32,11 @@ module formattedMultAdd
 	
    genvar i;
 	generate
-      for (i = 0; i < 4; i = i+1) begin
+      for (i = 0; i < 4; i = i+1) begin : formatted_mult_add
          assign weights0[i] = routing_weights[0][i];
 		   assign weights1[i] = routing_weights[1][i];
          assign voice_values0[i] = routing_values[routing_indices[0][i]];
-		   assign voice_values1[i] = routing_values[routing_indices[1][i];
+		   assign voice_values1[i] = routing_values[routing_indices[1][i]];
          assign routing_target[i] = res[i][2*DW:DW+1];
       end
    endgenerate

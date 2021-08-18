@@ -43,7 +43,7 @@ module fpgaFM_matrix
 
 );
 
-localparam NUMVOICES = 12;
+localparam NUMVOICES = 10;
 localparam VOICEADDRWIDTH = 4;
 localparam NUMOUTPUTS = 4;
 localparam OUTADDRWIDTH = 2;
@@ -78,8 +78,8 @@ reg   [15:0] samps_anti    [2][NUMVOICES];
 genvar g;
 int unsigned h;
 generate
-   for (g = 0; g < NUMVOICES; g = g+1) begin
-      for (h = 0; h < 2; h = h+1) begin
+   for (g = 0; g < NUMVOICES; g = g+1) begin : sample_format_outer
+      for (h = 0; h < 2; h = h+1) begin : sample_format_inner
          assign samps_interp[h][g] = sampBankInterp[g][h];
 			assign samps_anti[h][g] = sampBankAnti[g][h];
       end
@@ -188,13 +188,13 @@ phasor addressGenerators[0:NUMVOICES-1]
 //       In all likelihood I will attempt to use some form of custom multiread wavetable ROM but I'll think about it later.
 bilinearInterpolator sampleInterpolator[0:NUMVOICES-1]
 (
-      .Clk(MAX10_CLK2_50),
-		.En(voiceCounterEnable),
+      .clk(MAX10_CLK2_50),
+		.ena(voiceCounterEnable),
 		.interp_samples(samps_interp),
 		.antiInterp_samples(samps_anti),
 		.sample_interp(samp_interps),
 		.table_interp(table_interps),
-		.interped_out(interped_outputs)
+		.dout(interped_outputs)
 );
 
 
@@ -247,7 +247,7 @@ genvar i;
 int unsigned j, k;
 
 generate
-for (i = 0; i < NUMVOICES; i = i+1) begin
+for (i = 0; i < NUMVOICES; i = i+1) begin : initializations
    always_ff @ (posedge MAX10_CLK2_50) begin
       if (Reset_h) begin
 		   oscillator_outputs[i] <= 32'b0;
@@ -267,6 +267,7 @@ for (i = 0; i < NUMVOICES; i = i+1) begin
       end
 	   else begin
          oscillator_outputs[i] <= interped_outputs[i][63:32];
+			// ...
 	   end
    end
 end
